@@ -6,14 +6,12 @@ int main(){
 
     cout<<"Enter you number"<<endl;
     cin>>num;
-
     temp = num;
     while(num!=0){
         rem = num % 10;
         sum = (rem*rem*rem) + sum;
         num = num / 10;
     }
-
     if(temp == sum){
         cout<<"Armstrong Number"<<endl;
     }
